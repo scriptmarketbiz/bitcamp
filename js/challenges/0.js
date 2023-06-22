@@ -61,3 +61,24 @@
     
 // });
 // console.log(x);
+
+
+//34
+// დაწერეთ პროგრამა, რომ იპოვოთ მასივის ყველა ლუწი რიცხვის ჯამი.
+
+// Write a program to find the sum of all even numbers in an array.
+// let t=[1,2,3,4,5,6,7,8,9,0,11,12];
+// let luwi_jami=0;
+// //console.log(t);
+// t.forEach((element)=>{
+//  if(element%2==0)luwi_jami+=element;
+   
+// })
+// console.log(luwi_jami);
+// 35
+// დაწერეთ პროგრამა წინადადებაში სიტყვების თანმიმდევრობის შესაბრუნებლად.
+
+// Write a program to reverse the order of words in a sentence.
+
+
+
