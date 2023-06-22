@@ -43,3 +43,21 @@
 //         console.log(`${element} is palindromia ${rev}`)
 //     }
 // });
+//-----------33
+// დაწერეთ პროგრამა რომ წინადადებაში თითოეული სიტყვის პირველი ასოს დიდი ასოებით შეცვალოს.
+
+// // Write a program to capitalize the first letter of each word in a sentence.
+// let x=" Lorem ipsum dolor sit amet, consectetur addddddipiscing elit. In pulvinar diam at tellus gravida, at.";
+// console.log(x);
+// x1="zuzua iamazi";
+// const arr=x.split(" ");
+// x="";
+
+
+// arr.forEach((element, index) => {
+//     x+=(element.charAt(0).toUpperCase()+element.slice(1)+" ");
+
+    
+    
+// });
+// console.log(x);
