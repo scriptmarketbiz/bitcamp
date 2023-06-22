@@ -116,3 +116,83 @@
 // let string = "Bitcmap";
 // let letter = string.charAt(string.length - 1);
 // console.log(letter);
+
+// let e="Eldari"
+// e=e.toLowerCase()
+// console.log(e)
+
+// i=2
+// if(i%2===0)console.log("luwia")
+// else console.log("kentia")
+
+// i=-0
+// if(i*-1>0)console.log("urayofitia")
+// if(i*-1<0)console.log("dadebitia")
+// if(i*-1===0)console.log("nolia")
+
+// let a=10
+// let b=11
+// if(a>b)console.log(a)
+// else console.log(b)
+
+// a=10
+// b=11
+// if(a>b)console.log(b)
+// else console.log(a)
+
+// let el="eldari sologa"
+// if (el.indexOf("ssol")!==-1)console.log("sheicavs sol s")
+
+// for (i=0; i<11; i++)console.log(i)
+
+
+// console.log(Math.sqrt(a).toString())
+
+
+// a="eldari"
+// a=a.split("").reverse().join("");
+// console.log(a)
+
+// let x=[1,2,3,3,-4,5,4]
+// // console.log(x)
+// // let x1=new Set(x)
+// // console.log(x1)
+
+// // console.log((x).sort())
+// let povna;
+// for (i=0;i<x.length; i++)
+// {
+//    if(i===0)povna=x[i] 
+//    if(x[i]<povna) 
+//    povna=x[i];
+  
+
+// }
+// console.log(povna)
+// console.log(x.includes(-44))
+
+
+
+let x=[1,2,3,3,-4,5,4]
+let x2=[];
+
+for (i=0;i<x.length; i++)
+{
+ console.log(`${x[i]}`)
+ if(x2[x[i].toString()])
+ x2[x[i].toString()]+=1;
+ else x2[x[i].toString()]=1;
+
+
+}
+for (let i in x2)
+{
+    console.log(`${i} is ${x2[i]}`)
+}
+
+
+
+
+
+
+
