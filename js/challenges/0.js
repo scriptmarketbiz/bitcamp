@@ -131,21 +131,46 @@
 // დაწერეთ პროგრამა მასივში ელემენტის პირველი ადგილმდებარეობის ინდექსის მოსაძებნად.
 
 // Write a program to find the index of the first occurrence of an element in an array.
-function firstOccur(ar)
-{
-    let i= null;
-    ar.forEach((element,index) => {
+// function firstOccur(ar)
+// {
+//     let i= null;
+//     ar.forEach((element,index) => {
         
-        //console.log(index);
-        if(element && i===null)
-        {
-        i= index;
+//         //console.log(index);
+//         if(element && i===null)
+//         {
+//         i= index;
       
-        }
+//         }
        
         
-    });
-    return i;
-}
-let t= [,2,3,4,5,6,7,8,9,0,11,12,1];
-console.log(firstOccur(t))
+//     });
+//     return i;
+// }
+// let t= [,2,3,4,5,6,7,8,9,0,11,12,1];
+// console.log(firstOccur(t))
+
+//39
+// დაწერეთ პროგრამა, რომ ამოიღოთ ყველა ცრუ მნიშვნელობა მასივიდან.
+
+// // Write a program to remove all falsy values from an array.
+
+// function delFalse(ar)
+// {
+//    ar=ar.filter(element=>element);
+//     return ar;
+// }
+// let t= [,2,3,4,5,0,7,8,9,0,11,12,1];
+// console.log(delFalse(t))
+
+//40
+// დაწერეთ პროგრამა მრავალგანზომილებიან მასივში ყველაზე დიდი ელემენტის მოსაძებნად.
+
+// Write a program to find the largest element in a multi-dimensional array.
+let multiArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ];
+  
+  console.log(multiArray);
