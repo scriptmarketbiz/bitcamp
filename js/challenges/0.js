@@ -80,5 +80,12 @@
 
 // Write a program to reverse the order of words in a sentence.
 
+// let x=" Lorem ipsum dolor sit amet, consectetur addddddipiscing elit. In pulvinar diam at tellus gravida, at.";
+// console.log(x);
+// const arr=x.split(" ");
+// x="";
 
-
+// console.log(arr.length    );
+// for(let i=arr.length-1 ; i>=0;i--)
+// x+=arr[i]+" " ;
+// console.log(x);
