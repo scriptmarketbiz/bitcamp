@@ -89,3 +89,63 @@
 // for(let i=arr.length-1 ; i>=0;i--)
 // x+=arr[i]+" " ;
 // console.log(x);
+//36
+// დაწერეთ პროგრამა მასივში სიდიდით მეორე რიცხვის მოსაძებნად.
+
+// Write a program to find the second largest number in an array.
+
+// let t=[1,2,3,4,5,6,7,8,9,0,11,12,1];
+// let max=0;
+// let max1=0;
+// //console.log(t);
+// t.forEach((element)=>{
+//  if(element>max1 &&max1!=max) 
+//        max1=element;
+
+        
+//  if(element>max)
+//        max=element;
+
+
+// })
+// console.log(max);
+// console.log(max1);
+
+// //37
+// // დაწერეთ პროგრამა, რათა შეამოწმოთ არის თუ არა ორი მასივი ტოლი.
+
+// // Write a program to check if two arrays are equal.
+// function arrEqual(arr1,arr2)
+// {
+//     if (arr1.length!==arr2.length)return false;  
+//     for(var i=0;i<arr1.length; i++)if(arr1[i]!==arr2[i])return false;  
+//     return true;
+// }
+
+
+// let t= [1,2,3,4,5,6,7,8,9,0,11,12,1];
+// let t1=[1,2,3,4,5,6,7,8,9,0,11,12,1];
+// console.log(arrEqual(t,t1));
+
+//38
+// დაწერეთ პროგრამა მასივში ელემენტის პირველი ადგილმდებარეობის ინდექსის მოსაძებნად.
+
+// Write a program to find the index of the first occurrence of an element in an array.
+function firstOccur(ar)
+{
+    let i= null;
+    ar.forEach((element,index) => {
+        
+        //console.log(index);
+        if(element && i===null)
+        {
+        i= index;
+      
+        }
+       
+        
+    });
+    return i;
+}
+let t= [,2,3,4,5,6,7,8,9,0,11,12,1];
+console.log(firstOccur(t))
