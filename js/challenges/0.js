@@ -89,8 +89,7 @@
 // for(let i=arr.length-1 ; i>=0;i--)
 // x+=arr[i]+" " ;
 // console.log(x);
-<<<<<<< HEAD
-=======
+
 //36
 // დაწერეთ პროგრამა მასივში სიდიდით მეორე რიცხვის მოსაძებნად.
 
@@ -165,12 +164,12 @@
 // let t= [,2,3,4,5,0,7,8,9,0,11,12,1];
 // console.log(delFalse(t))
 
->>>>>>> c4ef1c69e7602a060352525f2344188387d669e5
+
 //40
 // დაწერეთ პროგრამა მრავალგანზომილებიან მასივში ყველაზე დიდი ელემენტის მოსაძებნად.
 
 // Write a program to find the largest element in a multi-dimensional array.
-<<<<<<< HEAD
+
 
 
 // function multiMax(arr)
@@ -351,12 +350,99 @@
 //   ];
 
 //   console.log(f(people,'age'))
-=======
-let multiArray = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-  ];
-  
-  console.log(multiArray);
->>>>>>> c4ef1c69e7602a060352525f2344188387d669e5
+// 49
+// დაწერეთ ფუნქცია, რომელიც იღებს სტრიქონს ინფუთად და აბრუნებს ობიექტს, რომელიც შეიცავს სტრიქონში თითოეული სიმბოლოს რაოდენობას, სივრცეების გამოკლებით.
+
+// // Write a function that takes a string as input and returns an object containing the count of each character in the string, excluding spaces.
+// function f(st)
+
+// {
+//   const letterCount={};
+//   const cleannedStr=st.replace(/[^a-zA-Z]/g,"").toLowerCase();
+//  for (let i=0;i<cleannedStr.length;i++){
+//    const letter=cleannedStr[i];
+//    letterCount[letter]=(letterCount[letter]||0)+1;
+
+//  }
+
+//   //return cleannedStr.length;
+//   return letterCount;
+// }
+
+
+//   console.log(f("function that takes a string as input and returns an object containing the count of each character in the string, excluding spaces."));
+//50
+// დაწერეთ ფუნქცია, რომელიც იღებს სტრიქონს ინფუთად და აბრუნებს ყველაზე გრძელ ქვესტრინგს, რომელიც შეიცავს მხოლოდ უნიკალურ სიმბოლოებს. თუ არსებობს რამდენიმე ქვესტრიქონი იმავე სიგრძით, დააბრუნეთ პირველი, რომელსაც შეხვდებით.
+
+// Write a function that takes a string as input and returns the longest substring that contains only unique characters. If there are multiple substrings with the same length, return the first one you encounter.
+
+// function wordWithMaxUniqueLetters(sentence) {
+//   const words = sentence.split(" ");
+//   let maxUniqueCount = 0;
+//   let wordWithMaxUnique = "";
+
+//   words.forEach((word) => {
+//     const uniqueLetters = new Set([...word]);
+//     const uniqueCount = uniqueLetters.size;
+
+//     if (uniqueCount > maxUniqueCount) {
+//       maxUniqueCount = uniqueCount;
+//       wordWithMaxUnique = word;
+//     }
+//   });
+
+//   return wordWithMaxUnique;
+// }
+
+// // Example usage
+// const inputSentence = "pwwkew eldari irad zoromeni";
+// const wordWithMaxUnique = wordWithMaxUniqueLetters(inputSentence);
+// console.log(wordWithMaxUnique);
+
+//51
+// დაწერეთ პროგრამა, რომელიც ბეჭდავს ლუწ რიცხვებს 1-დან 20-მდე for loop-ის გამოყენებით.
+
+// For Loop:
+// Write a program that prints the even numbers between 1 and 20 using a for loop.
+// for(let i=0;i<=20;i=i+2)
+// console.log(i);
+
+//52
+// დაწერეთ პროგრამა, რომელიც იღებს რიცხვს ინფუთის სახით და ბეჭდავს კვირის შესაბამის დღეს switch/case-ის გამოყენებით. მაგალითად, თუ შეიყვანენ  1-ს, მან უნდა დაბეჭდოს "კვირა".
+
+
+// Switch/Case:
+// Write a program that takes a number as input and prints the corresponding day of the week using a switch/case statement. For example, if the input is 1, it should print "Sunday."
+// let x=prompt("hello");
+// switch (x)
+//   {
+//     case "1":
+// console.log("orshabati");
+// break;
+//           case "1":
+// console.log("orshabati");
+// break;
+//           case "2":
+// console.log("samshabati");
+// break;
+//           case "1":
+// console.log("orshabati");
+// break;
+//           case "1":
+// console.log("orshabati");
+// break;
+//           case "1":
+// console.log("orshabati");
+// break;
+//   }
+    
+
+// 54
+// დაწერეთ პროგრამა, რომელიც გამოთვლის რიცხვების ჯამს 1-დან 100-მდე for loop-ის გამოყენებით და დაბეჭდავს შედეგს.
+
+// For Loop:
+// Write a program that calculates the sum of numbers from 1 to 100 using a for loop and prints the result.
+let x=0;
+for (let i=0;i<100;i++)
+      x=x+i;
+     console.log(x);
