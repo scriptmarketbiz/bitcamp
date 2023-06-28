@@ -217,6 +217,33 @@ Expected output : "United States of America" -->
 <!-- 4. Write a JavaScript function that takes an array of numbers and finds the second lowest and second greatest numbers, respectively.
 Sample array : [1,2,3,4,5]
 Expected Output : 2,4 -->
+<script>
+    function f(ar)
+    {
+        var Max=0;
+        var Min=1000000;
+        let sMax = 0;
+        let sMin =1000000;
+        for (let i=0;i<ar.length;i++)
+        {
+            
+            if(ar[i]>Max)Max=ar[i];
+            if(ar[i]<Min)Min=ar[i];
+   
+            
+        }
+        for (let i=0;i<ar.length;i++)
+        {
+            if(ar[i]>sMax && (ar[i] <Max) )sMax=ar[i];       
+            if(ar[i]<sMin && ar[i] >Min )sMin=ar[i];    
+          
+        }
+        console.log(`smax-${sMax} smin-${sMin}`)
+
+    }
+    
+    f([1,2,3,4,5]);
+</script>
 
 <!-- 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
 Example string : 'the quick brown fox'
@@ -233,9 +260,3 @@ Expected Output : d,do,dog,o,og,g -->
 <!-- 8. Write a JavaScript function to find the first not repeated character.
 Sample arguments : 'abacddbec'
 Expected output : 'e' -->
-<script>
-if (true)
-{
-    var x=5;
-}
-</script>
