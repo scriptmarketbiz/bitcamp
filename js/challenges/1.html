@@ -1,0 +1,241 @@
+<!-- // Exercise 1: Changing Text Content
+// Create an HTML page with a <p> element. Write a JavaScript function that, when called, changes the text content of the <p> element to "Hello, DOM!". -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="p">eldari</p>
+    <button onclick="f()">Change Text</button>
+</head>
+<body>
+    <script>
+        function f()
+        {
+        var paragraph=document.getElementById("p");
+        paragraph.textContent="Hello Dom!";
+        }
+
+    </script>
+    
+</body>
+</html> -->
+
+<!-- // Exercise 2: Changing Styles
+// Create an HTML page with a <button> element. Write a JavaScript function that, when called, changes the background color of the <button> to red and the text color to white. -->
+    <!-- <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .custom-button{
+                background-color: blue;
+                color:white;
+            }
+        </style>
+       
+        <button onclick="f()" id="myButton" class="custom-button">Change Text</button>
+    </head>
+    <body>
+        <script>
+            function f()
+            {
+            var button=document.getElementById("myButton");
+            button.style.background="red";
+            button.style.color="green";
+
+            }
+    
+        </script>
+        
+    </body>
+    </html> -->
+
+<!-- Exercise 3: Creating Elements
+Create an HTML page with an empty <div> element. Write a JavaScript function that, when called, creates a new <p> element with the text content "New paragraph" and appends it as a child to the <div>. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f()
+        {
+            var div=document.getElementById("myDiv");
+            var paragraph=document.createElement("p");
+            paragraph.textContent="New Paragraph";
+            div.appendChild(paragraph);
+
+        }
+    </script>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <button onclick="f()">Create Paragraph</button>
+    
+</body>
+</html> -->
+<!-- 
+// Exercise 4: Event Handling
+// Create an HTML page with a <button> element. Write a JavaScript function that, when the button is clicked, displays an alert with the message "Button clicked!". -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <button onclick="alert('button clicked')">Create Paragraph</button>
+</body>
+</html> -->
+
+<!-- 
+// Exercise 5: Form Validation
+// Create an HTML page with a <form> element containing an input field and a submit button. Write a JavaScript function that, 
+    when the form is submitted, validates the input field. If the input is empty, 
+display an error message next to the input field. If the input is not empty, display an alert with the message "Form submitted!". -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            var inputField=document.getElementById("myInput");
+            var inputValue=inputField.value.trim();
+            if(inputValue===""){
+                var errorElement=document.createElement("span");
+                errorElement.textContent ="Input Field Cannot be empty";
+                errorElement.style.color="red";
+                var parentElement=inputField.parentNode;
+                parentElement.appendChild(errorElement);
+            } else {
+                alert ("form Submited");
+
+            }
+            return false;
+
+
+        }
+    
+    </script>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="myInput" required>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html> -->
+
+<!-- 1)functions
+1. Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number
+ of occurrences of the specified letter within the string.
+Sample arguments : 'w3resource.com', 'o'
+Expected output : 2 -->
+
+<!-- <script>
+    function f(letter,str){
+        let cnt=0;
+        for (let i=0;i<letter.length;i++)
+        {
+          //console.log(letter[i])  ;
+          if(letter[i]===str)cnt++;
+        }
+          return cnt;
+
+    }
+ console.log(f("eldar sologashvili","l"));
+    
+</script> -->
+
+<!-- 2. Write a JavaScript function to apply the Bubble Sort algorithm.
+Sample array : [12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]
+Expected output : [3223, 546, 455, 345, 234, 213, 122, 98, 84, 64, 23, 12, 9, 4, 1] -->
+<!-- 
+ <script>
+    function f(arr){
+        for(var i=0;i<arr.length;i++){
+            for(var j=0;j<arr.length;j++)
+            {
+               // console.log(`${arr[j]}`)
+            if(arr[j]<arr[j+1]){
+                console.log(`${arr[j]}`)
+                var temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+            }
+
+           
+        }
+        // [3223, 546, 455, 345, 234, 213, 122, 98, 84, 64, 23, 12, 9, 4, 1]
+        // [3223, 546, 455, 345, 234, 213, 122, 98, 84, 64, 23, 12, 9, 4, 1]
+      
+          return arr;
+
+    }
+    let arr=[12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]
+ console.log(f(arr));
+    
+</script>  -->
+
+
+<!-- 3. Write a JavaScript function that accepts a list of country names as input and returns the longest country name as output.
+Sample function : Longest_Country_Name(["Australia", "Germany", "United States of America"])
+Expected output : "United States of America" -->
+<!-- <script>
+    function f(cNames){
+        let lt=0;
+        let name='';
+        for(let i=0;i<cNames.length;i++){
+            if(cNames[i].length>lt)
+            {
+              
+                name=cNames[i];
+                lt=cNames[i].length;
+          
+            }
+           // console.log(cNames[i]);
+            
+        }
+        return name;
+        //console.log(cNames[i]);
+
+    }
+    console.log(f(["Australia", "Germany", "United States of America"]));
+</script> -->
+
+<!-- 4. Write a JavaScript function that takes an array of numbers and finds the second lowest and second greatest numbers, respectively.
+Sample array : [1,2,3,4,5]
+Expected Output : 2,4 -->
+
+<!-- 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+Example string : 'the quick brown fox'
+Expected Output : 'The Quick Brown Fox ' -->
+
+<!-- 6. Write a JavaScript function that returns a string that has letters in alphabetical order. 
+Example string : 'webmaster'
+Expected Output : 'abeemrstw' -->
+
+<!-- 7. Write a JavaScript function that generates all combinations of a string. 
+Example string : 'dog'
+Expected Output : d,do,dog,o,og,g -->
+
+<!-- 8. Write a JavaScript function to find the first not repeated character.
+Sample arguments : 'abacddbec'
+Expected output : 'e' -->
+<script>
+if (true)
+{
+    var x=5;
+}
+</script>
