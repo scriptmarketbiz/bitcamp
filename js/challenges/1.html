@@ -217,7 +217,7 @@ Expected output : "United States of America" -->
 <!-- 4. Write a JavaScript function that takes an array of numbers and finds the second lowest and second greatest numbers, respectively.
 Sample array : [1,2,3,4,5]
 Expected Output : 2,4 -->
-<script>
+<!-- <script>
     function f(ar)
     {
         var Max=0;
@@ -243,20 +243,130 @@ Expected Output : 2,4 -->
     }
     
     f([1,2,3,4,5]);
-</script>
+</script> -->
 
 <!-- 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
 Example string : 'the quick brown fox'
 Expected Output : 'The Quick Brown Fox ' -->
+<!-- 
+<script>
+    function f(st)
+    {
+        let words=st.split(" ");
+        let rSt="";
+        
+        for(let i=0;i<words.length;i++)
+        {
+ 
+            rSt+=words[i].charAt(0).toUpperCase()+ words[i].slice(1)+" ";
+
+        }
+        return rSt;
+
+
+    }
+
+    console.log(f('the quick brown fox'));
+</script> -->
 
 <!-- 6. Write a JavaScript function that returns a string that has letters in alphabetical order. 
 Example string : 'webmaster'
 Expected Output : 'abeemrstw' -->
+<!-- <script>
+    function f(st)
+    {
+        let words=st.split("");
+        words= words.sort();
+        let rSt="";
+        for(let i=0;i<words.length;i++)
+        {
+ 
+            rSt+=words[i];
+
+        }
+       
+        return rSt;
+
+
+    }
+
+    console.log(f('webmaster'));
+</script> -->
+
+
 
 <!-- 7. Write a JavaScript function that generates all combinations of a string. 
 Example string : 'dog'
 Expected Output : d,do,dog,o,og,g -->
+<!-- <script>
+    function f(st)
+    {
+        const combinations = [];
+        for(let i=0;i<st.length;i++)
+        {
+           // console.log(`i---${i}`);
+           
+            for (let j = i + 1; j <= st.length; j++) {
+           combinations.push(st.slice(i, j));
+          // console.log(`j---${j}`);
+    }
+         
+
+        }
+       
+        return combinations;
+
+
+    }
+
+    console.log(f('dog'));
+</script> -->
 
 <!-- 8. Write a JavaScript function to find the first not repeated character.
-Sample arguments : 'abacddbec'
+Sample arguments : 'abxacddbec'
 Expected output : 'e' -->
+<!-- <script>
+    function f(st)
+    {
+        let x = {};
+        for(let i=0;i<st.length;i++)
+        {
+           if(x[st[i]])
+           {
+           x[st[i]]+=1;
+           }
+           
+        
+        else {
+      x[st[i]] = 1;
+             }
+
+        }
+        let kw=[];
+        for(let key in x)
+        {
+            if(x[key]===1) return key;
+        }
+       
+        return kw;
+
+
+    }
+
+    console.log(f('abxacddbec'));
+</script>  -->
+
+<!-- 
+-----------------------2 arrays
+1.  Find the Maximum Subarray Sum: Write a function that takes an array of integers as input and finds the contiguous subarray 
+within the array that has the largest sum. Return the sum of that subarray. For example,
+ given the array [-2, 1, -3, 4, -1, 2, 1, -5, 4], the function should return 6, which corresponds to the sum of the 
+ subarray [4, -1, 2, 1]. -->
+ 
+
+<!-- 2.  Rotate Array: Write a function that rotates an array of n elements to the right by k steps. For example, given the array [1, 2, 3, 4, 5, 6, 7] and k = 3, the function should modify the array to become [5, 6, 7, 1, 2, 3, 4]. -->
+
+<!-- 3.  Find Missing Number: Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the missing number. For example, given the array [3, 0, 1], the function should return 2.
+ -->
+
+<!-- 4. Merge Intervals: Given an array of intervals, merge overlapping intervals and return the resulting merged intervals. For example, given the intervals [[1,3],[2,6],[8,10],[15,18]], the function should return [[1,6],[8,10],[15,18]]. -->
